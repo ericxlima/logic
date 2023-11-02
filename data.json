@@ -1,18 +1,38 @@
 {
     "Capítulo 1": [
-            {"front": "¿Qué es la programación?",
-            "back": "aaaa"},
-            {"front": "¿Qué es la programación?",
-            "back": "aaaa"},
-            {"front": "¿Qué es la programación?",
-            "back": "aaaa"}
-        ],
+        {
+            "front": "Argumento",
+            "back": "argumento é tal e tal"
+        },
+        {
+            "front": "Argumento Dedutivo Válido",
+            "back": "aaaa"
+        },
+        {
+            "front": "Bom Argumento Indutivo",
+            "back": "aaaa"
+        },
+        {
+            "front": "Argumento Dedutivo",
+            "back": "aaaa"
+        },
+        {
+            "front": "Argumento Indutivo",
+            "back": "aaaa"
+        }
+    ],
     "Capítulo 2": [
-        {"front": "¿Qué es la programación?",
-        "back": "aaaa"},
-        {"front": "¿Qué es la programación?",
-        "back": "aaaa"},
-        {"front": "¿Qué es la programación?",
-        "back": "aaaa"}
+        {
+            "front": "¿Qué es la programación?",
+            "back": "aaaa"
+        },
+        {
+            "front": "¿Qué es la programación?",
+            "back": "aaaa"
+        },
+        {
+            "front": "¿Qué es la programación?",
+            "back": "aaaa"
+        }
     ]
 }
