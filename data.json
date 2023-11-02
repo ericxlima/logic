@@ -1,10 +1,18 @@
 {
-    "Capítulo 1": {
-        "front": "¿Qué es la programación?",
-        "back": "aaaa"
-    },
-    "Capítulo 2": {
-        "front": "¿Qué es la programación?",
-        "back": "aaaa"
-    }
+    "Capítulo 1": [
+            {"front": "¿Qué es la programación?",
+            "back": "aaaa"},
+            {"front": "¿Qué es la programación?",
+            "back": "aaaa"},
+            {"front": "¿Qué es la programación?",
+            "back": "aaaa"}
+        ],
+    "Capítulo 2": [
+        {"front": "¿Qué es la programación?",
+        "back": "aaaa"},
+        {"front": "¿Qué es la programación?",
+        "back": "aaaa"},
+        {"front": "¿Qué es la programación?",
+        "back": "aaaa"}
+    ]
 }
