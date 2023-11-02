@@ -1,41 +1,102 @@
-.container-card {
-    width: 100%;
-    height: 500px;
-}
-
-.container-card:hover > .flashcard {
-    cursor: pointer;
-    transform: rotateY(180deg);
+:root {
+  --primary: #00f696;
+  --secondary: #00d4ff;
+  --dark: #212121;
+  --light: #F3F3F3;
 }
 
 .flashcard {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 1500ms;
-    transform-style: preserve-3d;
+  margin: auto auto 2rem;
+  width: auto;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.front,
-.back {
-    height: 100%;
-    width: 100%;
-    border-radius: 2rem;
-    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
-    position: absolute;
-    backface-visibility: hidden;
+.flashcard__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
 }
 
-.front {
-    background-color: #bbb;
-    color: black;
-}
-
-.back {
-    background-color: #222;
-    color: white;
-    transform: rotateY(180deg);
-    gap: 1rem;
+.flashcard__inner.is-flipped {
+  transform: rotateY(180deg);
 }
 
 
+.flashcard__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.flashcard__face--front {
+  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashcard__face--front h2 {
+  color: #FFF;
+  font-size: 32px;
+}
+
+.flashcard__face--back {
+  background-color: var(--light);
+  transform: rotateY(180deg);
+}
+
+.flashcard__content {
+  width: 100%;
+  height: 100%;
+}
+
+.flashcard__header {
+  position: relative;
+  padding: 30px;
+}
+
+.flashcard__header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+  z-index: -1;
+}
+
+.flashcard__header h2 {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.flashcard__body {
+  padding: 30px;
+}
+
+.flashcard__body h3 {
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.flashcard__body p {
+  color: var(--dark);
+  font-size: 18px;
+  line-height: 1.4;
+}
