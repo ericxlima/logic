@@ -1,38 +1,77 @@
-// Carregar o JSON com os dados dos capítulos
-fetch('data.json')
+fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
   .then(response => response.json())
   .then(data => {
-    const accordionBody = document.querySelector('.accordion-body');
+    const accordion = document.querySelector('.accordion');
+
+    let index = 1;
 
     for (const capitulo in data) {
       if (data.hasOwnProperty(capitulo)) {
         const capituloData = data[capitulo];
 
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('flashcard');
+        const accordionItem = document.createElement('div');
+        accordionItem.classList.add('accordion-item');
 
-        cardDiv.innerHTML = `
-          <div class="flashcard__inner">
-            <div class="flashcard__face flashcard__face--front">
-              <h2>${capituloData.front}</h2>
-            </div>
-            <div class="flashcard__face flashcard__face--back">
-              <div class="flashcard__content">
-                <div class="flashcard__header">
-                  <h2>${capituloData.back}</h2>
-                </div>
-              </div>
+        accordionItem.innerHTML = `
+          <div class="accordion-header">
+            <h3 class="mb-0">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">
+                Capítulo ${index}
+              </button>
+            </h3>
+          </div>
+          <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
             </div>
           </div>
         `;
 
-        accordionBody.appendChild(cardDiv);
+        accordion.appendChild(accordionItem);
+
+        const accordionBody = accordionItem.querySelector('.accordion-body');
+
+        if (Array.isArray(capituloData)) {
+          capituloData.forEach((carta, cartaIndex) => {
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('flashcard');
+
+            cardDiv.innerHTML = `
+              <div class="flashcard__inner">
+                <div class="flashcard__face flashcard__face--front">
+                  <h2>${carta.front}</h2>
+                </div>
+                <div class="flashcard__face flashcard__face--back">
+                  <div class="flashcard__content">
+                    <div class="flashcard__header">
+                      <h2>${carta.front}</h2>
+                    </div>
+                    <div class="flashcard__body">
+                      <p>${carta.back}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            `;
+
+            accordionBody.appendChild(cardDiv);
+
+            // Adicione o evento de clique dentro do loop para cada carta
+            const flashcard = cardDiv.querySelector(".flashcard__inner");
+
+            flashcard.addEventListener("click", function (e) {
+              flashcard.classList.toggle("is-flipped");
+            });
+          });
+        }
+        index++;
       }
     }
   })
   .catch(error => {
     console.error('Erro ao carregar os dados do JSON:', error);
   });
+
 
 const flashcards = document.querySelectorAll(".flashcard__inner");
 
