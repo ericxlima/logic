@@ -113,7 +113,7 @@
       "back": "O conectivo principal em uma expressão lógica é o operador lógico que tem a maior prioridade e afeta a estrutura da expressão. Ele determina como a expressão é avaliada e como as regras lógicas se aplicam."
     }
   ],
-  "Capítulo 2 - Transcrição entre linguagem natural e lógica setencial": [
+  "Capítulo 2 - Transcrição entre Linguagem Natural e Lógica Setencial": [
     {
       "front": "Transcrição",
       "back": "A transcrição de linguagem natural para lógica é o processo de converter sentenças ou afirmações em linguagem natural em expressões lógicas ou proposições formais. Esse processo é usado para representar informações e argumentos de maneira lógica e estruturada."
@@ -123,7 +123,7 @@
       "back": "Uma transcrição adequada refere-se a uma conversão precisa e fiel de uma sentença em linguagem natural para uma expressão lógica. Uma transcrição adequada preserva o significado da sentença original e mantém a validade das relações lógicas."
     }
   ],
-  "Capítulo 3 - Equivalência Lógica, verdades lógicas e contradições": [
+  "Capítulo 3 - Equivalência Lógica, Verdades Lógicas e Contradições": [
     {
       "front": "Equivalência Lógica",
       "back": "A equivalência lógica é uma relação entre duas expressões lógicas que têm o mesmo valor-verdade para todas as atribuições possíveis de valores-verdade às variáveis envolvidas. Duas expressões são consideradas logicamente equivalentes se produzem os mesmos resultados."
@@ -191,6 +191,190 @@
     {
       "front": "NAND",
       "back": "NAND é um operador lógico que significa \"não e\". É funcionalmente completo, o que significa que pode ser usado para representar qualquer função lógica. A saída de uma operação NAND é falsa apenas quando ambas as entradas são verdadeiras."
+    }
+  ],
+  "Capítulo 4 - Validade e Condicionais": [
+    {
+      "front": "Válido",
+      "back": "Um argumento ou raciocínio é considerado válido quando a conclusão segue necessariamente das premissas. Isso significa que se as premissas são verdadeiras, a conclusão também deve ser verdadeira."
+    },
+    {
+      "front": "Inválido",
+      "back": "Um argumento é considerado inválido quando a conclusão não segue necessariamente das premissas. Isso significa que mesmo se as premissas forem verdadeiras, a conclusão pode ser falsa."
+    },
+    {
+      "front": "Contra-exemplo",
+      "back": "Um contra-exemplo é um exemplo específico que mostra que um argumento é inválido. É uma instância em que as premissas são verdadeiras, mas a conclusão é falsa, demonstrando a invalidade do argumento."
+    },
+    {
+      "front": "Correto",
+      "back": "Um argumento é considerado correto quando suas premissas são verdadeiras, e a conclusão segue necessariamente das premissas, tornando-o válido."
+    },
+    {
+      "front": "Condicional",
+      "back": "Um condicional é uma expressão lógica que consiste em duas proposições, geralmente na forma 'se...então...'. O condicional afirma que a segunda proposição é verdadeira quando a primeira proposição é verdadeira."
+    },
+    {
+      "front": "Bicondicional",
+      "back": "Um bicondicional é uma expressão lógica que afirma que duas proposições são verdadeiras ou falsas juntas. Pode ser expresso como 'se e somente se' e é verdadeiro quando ambas as proposições têm o mesmo valor-verdade."
+    },
+    {
+      "front": "Lei do Condicional",
+      "back": "A Lei do Condicional afirma que um condicional é falso apenas quando a proposição antecedente (a primeira) é verdadeira, e a proposição consequente (a segunda) é falsa. Caso contrário, o condicional é verdadeiro."
+    },
+    {
+      "front": "Lei da Contraposição",
+      "back": "A Lei da Contraposição estabelece que o contraposto de um condicional é logicamente equivalente ao condicional negado. Em outras palavras, inverter e negar as proposições de um condicional não altera seu valor-verdade."
+    },
+    {
+      "front": "Lei do Bicondicional",
+      "back": "A Lei do Bicondicional afirma que um bicondicional é verdadeiro apenas quando ambas as proposições têm o mesmo valor-verdade. Se ambas são verdadeiras ou ambas são falsas, o bicondicional é verdadeiro."
+    }
+  ],
+  "Capítulo 5 - Fundamentos da Dedução Natural para Lógica Sentencial": [
+    {
+      "front": "Derivação",
+      "back": "A derivação é um processo na dedução natural em que se busca deduzir uma conclusão válida a partir de premissas usando regras de inferência e suposições. É um método sistemático para estabelecer a validade de um argumento lógico."
+    },
+    {
+      "front": "Subderivação",
+      "back": "Uma subderivação é uma derivação interna a uma derivação maior. É frequentemente usada para justificar suposições temporárias e aplicar regras de inferência dentro de um escopo específico."
+    },
+    {
+      "front": "Derivação externa",
+      "back": "A derivação externa é a derivação principal em um argumento lógico, que inclui todas as premissas e a conclusão final. Ela orienta o processo de dedução e serve como estrutura para o raciocínio lógico."
+    },
+    {
+      "front": "Linha de escopo",
+      "back": "Uma linha de escopo é usada para indicar a área em que uma suposição temporária ou subderivação se aplica. Ela ajuda a identificar o alcance de regras de inferência específicas dentro da derivação."
+    },
+    {
+      "front": "Premissa",
+      "back": "Uma premissa é uma proposição ou afirmação usada como ponto de partida em um argumento lógico. Elas são aceitas como verdadeiras para fins de argumentação e são usadas para derivar conclusões."
+    },
+    {
+      "front": "Suposição",
+      "back": "Uma suposição é uma proposição temporária assumida durante uma derivação para fins de raciocínio. As suposições são usadas para justificar a aplicação de regras de inferência e são geralmente descartadas quando não são mais necessárias."
+    },
+    {
+      "front": "Regra de inferência",
+      "back": "Uma regra de inferência é uma diretriz ou princípio que governa o processo de dedução. Elas especificam como se pode justificar a conclusão de um argumento com base nas premissas dadas e nas regras lógicas."
+    },
+    {
+      "front": "Licença (para escrever uma conclusão)",
+      "back": "A licença para escrever uma conclusão é uma regra que permite derivar uma conclusão lógica com base nas premissas e na aplicação apropriada das regras de inferência. Ela estabelece as condições sob as quais uma conclusão pode ser afirmada."
+    },
+    {
+      "front": "Regra que preserva a verdade",
+      "back": "Uma regra que preserva a verdade é uma regra de inferência que garante que, se as premissas são verdadeiras, a conclusão derivada também será verdadeira. Essas regras garantem a validade da dedução."
+    },
+    {
+      "front": "Dispensar uma suposição",
+      "back": "Dispensar uma suposição é o processo de encerrar uma suposição temporária que não é mais necessária na derivação. Isso pode ser feito quando a suposição não contribui mais para a prova da conclusão."
+    },
+    {
+      "front": "Introdução da Conjunção",
+      "back": "A introdução da conjunção é uma regra de inferência que permite combinar duas proposições em uma única proposição conjunta usando o operador lógico ∧ (E). Ela é usada para criar uma conjunção a partir de duas proposições."
+    },
+    {
+      "front": "Eliminação da Conjunção",
+      "back": "A eliminação da conjunção é uma regra de inferência que permite decompor uma proposição conjunta em suas duas proposições componentes. É usada para extrair informações de uma conjunção."
+    },
+    {
+      "front": "Introdução da Disjunção",
+      "back": "A introdução da disjunção é uma regra de inferência que permite criar uma proposição disjuntiva a partir de duas proposições individuais. Ela é usada quando se deseja afirmar que pelo menos uma das proposições é verdadeira."
+    },
+    {
+      "front": "Eliminação da Disjunção",
+      "back": "A eliminação da disjunção é uma regra de inferência que permite explorar as consequências de uma proposição disjuntiva, considerando os casos separadamente. Ela é usada para justificar conclusões com base nas alternativas disjuntivas."
+    },
+    {
+      "front": "Introdução do Condicional",
+      "back": "A introdução do condicional é uma regra de inferência que permite estabelecer um condicional a partir de premissas. Ela é usada para afirmar que, se uma proposição é verdadeira, então outra proposição também é verdadeira."
+    },
+    {
+      "front": "Eliminação do Condicional",
+      "back": "A eliminação do condicional é uma regra de inferência que permite explorar as implicações de um condicional, considerando o antecedente e as consequências. Ela é usada para justificar conclusões com base na condição estabelecida pelo condicional."
+    },
+    {
+      "front": "Introdução do Bicondicional",
+      "back": "A introdução do bicondicional é uma regra de inferência que permite afirmar que duas proposições são logicamente equivalentes, ou seja, verdadeiras ou falsas juntas. Ela é usada para estabelecer a equivalência entre proposições."
+    },
+    {
+      "front": "Eliminação do Bicondicional",
+      "back": "A eliminação do bicondicional é uma regra de inferência que permite explorar as implicações de um bicondicional, considerando as duas direções da equivalência. Ela é usada para justificar conclusões com base nas relações de equivalência."
+    },
+    {
+      "front": "Introdução da Negação",
+      "back": "A introdução da negação é uma regra de inferência que permite afirmar a negação de uma proposição com base em uma dedução que demonstra a falsidade da proposição original. Ela é usada para justificar a negação de uma proposição."
+    },
+    {
+      "front": "Eliminação da Negação",
+      "back": "A eliminação da negação é uma regra de inferência que permite afirmar a verdade de uma proposição negada, com base em uma dedução que demonstra a falsidade da negação. Ela é usada para justificar a afirmação de uma proposição."
+    },
+    {
+      "front": "Reiteração",
+      "back": "A reiteração é uma regra de inferência que permite afirmar novamente uma proposição já derivada em uma derivação, reafirmando sua verdade. Ela é usada quando se deseja enfatizar ou utilizar novamente uma proposição previamente estabelecida."
+    }
+  ],
+  "Capítulo 6 - Estratégias em Dedução Natural para Lógica Sentencial": [
+    {
+      "front": "Estratégia Reductio Ad Absurdum",
+      "back": "A estratégia Reductio ad Absurdum é uma técnica de dedução que envolve a suposição de uma hipótese negada e a busca de uma contradição a partir dessa suposição. Se a suposição leva a uma conclusão falsa ou contraditória, a hipótese negada é considerada verdadeira."
+    },
+    {
+      "front": "Conectivo Principal",
+      "back": "O conectivo principal em uma expressão lógica é o operador lógico que está mais externo e tem a maior influência sobre a estrutura da expressão. Identificar o conectivo principal é importante para aplicar regras de inferência corretamente."
+    },
+    {
+      "front": "Dispensar uma Suposição",
+      "back": "Dispensar uma suposição é uma estratégia em dedução natural que envolve encerrar uma suposição temporária que não é mais necessária na derivação. Isso é feito quando a suposição não contribui mais para a prova da conclusão."
+    },
+    {
+      "front": "Pular Linhas de Escopo",
+      "back": "Pular linhas de escopo é uma técnica que envolve pular etapas de dedução dentro de um escopo específico, geralmente uma subderivação, quando a prova da conclusão não depende das etapas puladas. Isso ajuda a simplificar a derivação."
+    }
+  ],
+  "Capítulo 7 - Regras Derivadas e Derivações sem Premissas em Dedução Natural": [
+    {
+      "front": "Conectivo Principal",
+      "back": "O conectivo principal em uma expressão lógica é o operador lógico mais externo que tem a maior influência sobre a estrutura da expressão. Identificar o conectivo principal é fundamental para aplicar corretamente as regras de inferência."
+    },
+    {
+      "front": "Regra Primitiva",
+      "back": "Uma regra primitiva, também conhecida como regra básica, é uma regra de inferência fundamental em dedução natural que não depende de regras derivadas. Elas são as regras mais simples e essenciais do sistema de dedução."
+    },
+    {
+      "front": "Regra Derivada",
+      "back": "Uma regra derivada é uma regra de inferência em dedução natural que é construída com base em regras primitivas e outras regras derivadas. Elas são desenvolvidas para simplificar a derivação de argumentos mais complexos."
+    },
+    {
+      "front": "Regra do Enfraquecimento",
+      "back": "A regra do enfraquecimento é uma regra derivada que permite inferir uma proposição mais fraca a partir de uma proposição mais forte. Ela é usada para mostrar que, se uma afirmação mais forte é verdadeira, então uma afirmação mais fraca também é verdadeira."
+    },
+    {
+      "front": "Regra da Contraposição",
+      "back": "A regra da contraposição é uma regra derivada que permite inferir a negação do antecedente de um condicional a partir da negação de sua consequência. Ela é usada para transformar condicionais em formas equivalentes."
+    },
+    {
+      "front": "Regras de De Morgan",
+      "back": "As regras de De Morgan são um conjunto de regras derivadas que descrevem a relação entre negações, conjunções e disjunções. Elas fornecem maneiras de lidar com negações de proposições compostas."
+    },
+    {
+      "front": "Regras Condicionais",
+      "back": "Regras condicionais são um conjunto de regras derivadas que tratam de condicionais e bicondicionais em dedução natural. Elas permitem manipular e inferir conclusões com base em afirmações condicionais."
+    },
+    {
+      "front": "Regra Reductio Ad Absurdum",
+      "back": "A regra Reductio ad Absurdum é uma regra de inferência que envolve a suposição de uma hipótese negada e a busca de uma contradição a partir dessa suposição. Se a suposição leva a uma conclusão falsa ou contraditória, a hipótese negada é considerada verdadeira."
+    },
+    {
+      "front": "Derivações sem Premissas",
+      "back": "Derivações sem premissas são argumentos que são deduzidos sem a necessidade de premissas iniciais. Em outras palavras, essas derivações são autocontidas e se baseiam apenas nas regras de inferência e nas definições dos conectivos lógicos."
+    },
+    {
+      "front": "Testes para Verdades Lógicas e Contradições",
+      "back": "Os testes para verdades lógicas e contradições são procedimentos usados para determinar se uma proposição é uma verdade lógica, ou seja, se ela é verdadeira em todas as situações, ou se é uma contradição, ou seja, se é falsa em todas as situações. Esses testes ajudam a verificar a validade de argumentos."
     }
   ]
 }
