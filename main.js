@@ -8,6 +8,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
     for (const capitulo in data) {
       if (data.hasOwnProperty(capitulo)) {
         const capituloData = data[capitulo];
+        const numCartas = capituloData.length; // Conta o número de cartas
 
         const accordionItem = document.createElement('div');
         accordionItem.classList.add('accordion-item');
@@ -17,7 +18,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
             <h3 class="mb-0">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">
-                Capítulo ${index}
+                ${capitulo} (${numCartas} cartas)
               </button>
             </h3>
           </div>
@@ -80,3 +81,25 @@ flashcards.forEach((flashcard) => {
     flashcard.classList.toggle("is-flipped");
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.getElementById("scroll-to-top");
+
+  // Mostrar o botão quando o usuário rolar a página
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      scrollToTopButton.style.display = "block";
+    } else {
+      scrollToTopButton.style.display = "none";
+    }
+  });
+
+  // Rolar suavemente para o topo quando o botão for clicado
+  scrollToTopButton.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
