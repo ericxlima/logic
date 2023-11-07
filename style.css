@@ -73,6 +73,7 @@ body {
 .flashcard__face--back {
   background-color: var(--light);
   transform: rotateY(180deg);
+  overflow-y: auto;
 }
 
 .flashcard__content {
@@ -125,8 +126,8 @@ body {
 .scroll-to-top {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 2rem;
+  right: 2rem;
   background-color: transparent;
   color: var(--light);
   width: 50px;
