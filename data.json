@@ -1,38 +1,196 @@
 {
-    "Capítulo 1": [
-        {
-            "front": "Argumento",
-            "back": "argumento é tal e tal"
-        },
-        {
-            "front": "Argumento Dedutivo Válido",
-            "back": "aaaa"
-        },
-        {
-            "front": "Bom Argumento Indutivo",
-            "back": "aaaa"
-        },
-        {
-            "front": "Argumento Dedutivo",
-            "back": "aaaa"
-        },
-        {
-            "front": "Argumento Indutivo",
-            "back": "aaaa"
-        }
-    ],
-    "Capítulo 2": [
-        {
-            "front": "¿Qué es la programación?",
-            "back": "aaaa"
-        },
-        {
-            "front": "¿Qué es la programación?",
-            "back": "aaaa"
-        },
-        {
-            "front": "¿Qué es la programación?",
-            "back": "aaaa"
-        }
-    ]
+  "Capítulo 1 - Ideias básicas e ferramentas": [
+    {
+      "front": "Premissa",
+      "back": "Premissas de um argumento são sentenças declarativas que apoiam, ou nos dão razões para acreditar na conclusão."
+    },
+    {
+      "front": "Argumento",
+      "back": "Um argumento é uma sequência de afirmações (premissas) que levam a uma conclusão. A lógica é usada para avaliar se um argumento é válido, ou seja, se as premissas realmente suportam a conclusão."
+    },
+    {
+      "front": "Argumento Dedutivo Válido",
+      "back": "um argumento em que, sem exceções, se as premissas são verdadeiras então a conclusão também será verdadeira."
+    },
+    {
+      "front": "Bom Argumento Indutivo",
+      "back": "um argumento em que as premissas fornecem boas razões para se acreditar na conclusão. Em um argumento indutivo, as premissas tornam a conclusão verossímel, mas a conclusão pode ser falsa mesmo se aspremissas forem verdadeiras"
+    },
+    {
+      "front": "Argumento Dedutivo",
+      "back": "Um argumento dedutivo é aquele em que se afirma que a conclusão segue necessariamente das premissas. Em um argumento dedutivo, a validade é fundamental."
+    },
+    {
+      "front": "Argumento Indutivo",
+      "back": "Um argumento indutivo é aquele em que as premissas fornecem evidências para apoiar a conclusão, mas a conclusão não segue necessariamente das premissas."
+    },
+    {
+      "front": "Sentença Atômica",
+      "back": "Uma sentença atômica (ou proposição atômica) é uma afirmação simples que não pode ser dividida em partes menores com significado lógico independente. Exemplos incluem \"A Terra é redonda\" ou \"Hoje é segunda-feira\"."
+    },
+    {
+      "front": "Sentença Composta",
+      "back": "Uma sentença composta é construída a partir de sentenças atômicas usando conectivos lógicos. Ela pode ser dividida em partes menores (as sentenças atômicas) e possui uma estrutura lógica. Exemplos incluem \"Se chover, então o chão ficará molhado.\""
+    },
+    {
+      "front": "Conectivo",
+      "back": "Um conectivo lógico é um termo usado para combinar ou alterar o significado de sentenças lógicas. Alguns exemplos comuns de conectivos são \"e\" (conjunção), \"ou\" (disjunção), \"se... então\" (implicação), \"se e somente se\" (equivalência)."
+    },
+    {
+      "front": "Componente",
+      "back": "Em um contexto lógico, um componente pode se referir a partes de uma sentença composta, como as sentenças atômicas ou os conectivos que a compõem. Ex: quando escrevemos  \"A ∧ B\". \"A\" e \"B\" são chamados de Conjuntores ou Componentes de \"A ∧ B\""
+    },
+    {
+      "front": "¬ \"Sinal de Negação\"",
+      "back": "O símbolo ¬ (também chamado de til ou não) é um operador lógico que denota negação. Ele inverte o valor-verdade de uma proposição. Por exemplo, se P é verdadeira, ¬P será falsa."
+    },
+    {
+      "front": "Negação",
+      "back": "A negação é uma operação lógica que inverte o valor-verdade de uma proposição. É frequentemente representada pelo símbolo ¬."
+    },
+    {
+      "front": "∧ \"Sinal de Conjunção\"",
+      "back": "O símbolo ∧ (também chamado de \"E\" lógico ou operador \"E\") é usado para denotar a conjunção lógica. Em uma expressão lógica, a conjunção é verdadeira somente se ambas as proposições unidas por ∧ forem verdadeiras."
+    },
+    {
+      "front": "Conjunção",
+      "back": "A conjunção é uma operação lógica que é verdadeira apenas quando ambas as proposições conectadas por ela são verdadeiras. É frequentemente representada pelo símbolo ∧."
+    },
+    {
+      "front": "Conjuntor",
+      "back": "O conjuntor é um termo usado para se referir a operadores lógicos, como o operador de conjunção (∧), que são usados para unir proposições e avaliar a lógica das combinações."
+    },
+    {
+      "front": "∨ \"Sinal de Disjunção\"",
+      "back": "O símbolo ∨ (também chamado de \"OU\" lógico ou operador \"OU\") é usado para denotar a disjunção lógica. Em uma expressão lógica, a disjunção é verdadeira se pelo menos uma das proposições unidas por ∨ for verdadeira."
+    },
+    {
+      "front": "Disjunção",
+      "back": "A disjunção é uma operação lógica que é verdadeira se pelo menos uma das proposições conectadas por ela for verdadeira. É frequentemente representada pelo símbolo ∨."
+    },
+    {
+      "front": "Disjuntor",
+      "back": "O disjuntor é um termo usado para se referir a operadores lógicos, como o operador de disjunção (∨), que são usados para unir proposições e avaliar a lógica das combinações."
+    },
+    {
+      "front": "Ou Inclusivo",
+      "back": "O \"OU\" inclusivo é um termo usado para descrever a operação lógica de disjunção (∨), na qual a disjunção é verdadeira se pelo menos uma das proposições for verdadeira. Pode ser usado de forma inclusiva, o que significa que ambas as proposições também podem ser verdadeiras."
+    },
+    {
+      "front": "Valor-verdade",
+      "back": "O valor-verdade é uma propriedade de uma proposição que indica se a proposição é verdadeira ou falsa. As proposições podem ter valores-verdade de verdadeiro (V) ou falso (F)."
+    },
+    {
+      "front": "Tabela-verdade",
+      "back": "Uma tabela-verdade é uma tabela que lista todas as combinações possíveis de valores-verdade para uma expressão lógica. Ela mostra como o valor-verdade da expressão depende dos valores-verdade de suas proposições componentes."
+    },
+    {
+      "front": "Tabela-verdade de definição",
+      "back": "Uma tabela-verdade de definição é uma tabela que define as regras lógicas que governam uma operação ou conectivo lógico específico. Ela lista todas as combinações de valores-verdade para as entradas do conectivo e a saída correspondente."
+    },
+    {
+      "front": "Atribuição de valores-verdade",
+      "back": "A atribuição de valores-verdade é o processo de atribuir valores-verdade (verdadeiro ou falso) às proposições em uma expressão lógica. Isso permite a avaliação do valor-verdade da expressão como um todo com base nos valores das proposições componentes."
+    },
+    {
+      "front": "Caso",
+      "back": "Um caso é uma situação específica ou combinação de valores-verdade para as proposições em uma expressão lógica. Uma tabela-verdade de definição descreve como um conectivo lógico opera em diferentes casos."
+    },
+    {
+      "front": "Função-verdade",
+      "back": "A função-verdade é uma tabela que lista todos os possíveis valores-verdade para uma expressão lógica, com base nos valores-verdade de suas proposições componentes. Ela descreve como a expressão lógica se comporta em diferentes casos."
+    },
+    {
+      "front": "Conectivo verofuncional",
+      "back": "Um conectivo verofuncional é um operador lógico que opera em funções-verdade. Ele é usado para combinar funções-verdade e produzir novas funções-verdade com base nas regras estabelecidas por esse conectivo."
+    },
+    {
+      "front": "Componente verofuncional",
+      "back": "Um componente verofuncional é uma proposição ou variável que é usada como entrada em uma função-verdade. Os valores-verdade dos componentes verofuncionais são usados para determinar os valores-verdade da função-verdade resultante."
+    },
+    {
+      "front": "Conectivo principal",
+      "back": "O conectivo principal em uma expressão lógica é o operador lógico que tem a maior prioridade e afeta a estrutura da expressão. Ele determina como a expressão é avaliada e como as regras lógicas se aplicam."
+    }
+  ],
+  "Capítulo 2 - Transcrição entre linguagem natural e lógica setencial": [
+    {
+      "front": "Transcrição",
+      "back": "A transcrição de linguagem natural para lógica é o processo de converter sentenças ou afirmações em linguagem natural em expressões lógicas ou proposições formais. Esse processo é usado para representar informações e argumentos de maneira lógica e estruturada."
+    },
+    {
+      "front": "Transcrição Adequada",
+      "back": "Uma transcrição adequada refere-se a uma conversão precisa e fiel de uma sentença em linguagem natural para uma expressão lógica. Uma transcrição adequada preserva o significado da sentença original e mantém a validade das relações lógicas."
+    }
+  ],
+  "Capítulo 3 - Equivalência Lógica, verdades lógicas e contradições": [
+    {
+      "front": "Equivalência Lógica",
+      "back": "A equivalência lógica é uma relação entre duas expressões lógicas que têm o mesmo valor-verdade para todas as atribuições possíveis de valores-verdade às variáveis envolvidas. Duas expressões são consideradas logicamente equivalentes se produzem os mesmos resultados."
+    },
+    {
+      "front": "Diagrama de Venn",
+      "back": "Um diagrama de Venn é uma representação gráfica usada para ilustrar a relação entre conjuntos e suas interseções. Pode ser usado na lógica para mostrar a relação entre conjuntos de valores-verdade de proposições."
+    },
+    {
+      "front": "Lei da Dupla Negação",
+      "back": "A Lei da Dupla Negação afirma que a negação de uma negação de uma proposição é logicamente equivalente à proposição original. Em notação simbólica, ¬(¬P) é equivalente a P."
+    },
+    {
+      "front": "Leis de De Morgan",
+      "back": "As Leis de De Morgan são duas regras que descrevem como negar conjunções e disjunções. A primeira lei afirma que a negação de uma conjunção é logicamente equivalente à disjunção das negações. A segunda lei afirma que a negação de uma disjunção é logicamente equivalente à conjunção das negações."
+    },
+    {
+      "front": "Leis Distributivas",
+      "back": "As Leis Distributivas são regras que descrevem a distribuição de operadores lógicos. Elas indicam como um operador lógico pode ser distribuído sobre outro. Essas leis são importantes na simplificação de expressões lógicas."
+    },
+    {
+      "front": "Lei da Substituição de Equivalentes Lógicos",
+      "back": "A Lei da Substituição de Equivalentes Lógicos afirma que se duas expressões são logicamente equivalentes, você pode substituir uma pela outra em uma prova lógica sem afetar a validade da prova."
+    },
+    {
+      "front": "Lei da Transitividade da Equivalência Lógica",
+      "back": "A Lei da Transitividade da Equivalência Lógica afirma que se duas expressões são logicamente equivalentes a uma terceira expressão, então as duas primeiras também são logicamente equivalentes entre si. Isso permite estabelecer relações de equivalência em cadeia."
+    },
+    {
+      "front": "Leis Comutativas",
+      "back": "As Leis Comutativas são regras que afirmam que a ordem das proposições não afeta o valor-verdade de uma expressão lógica. Nas leis comutativas, a ordem de operadores como ∧ (E) e ∨ (OU) pode ser trocada sem alterar o resultado."
+    },
+    {
+      "front": "Lei da Associatividade",
+      "back": "A Lei da Associatividade afirma que, em uma sequência de operadores do mesmo tipo (por exemplo, várias conjunções ou disjunções), a maneira como os operadores são agrupados não afeta o valor-verdade da expressão."
+    },
+    {
+      "front": "Lei da Redundância",
+      "back": "A Lei da Redundância estabelece que incluir a mesma proposição em uma conjunção ou disjunção lógica é redundante. A proposição não afeta o valor-verdade da expressão."
+    },
+    {
+      "front": "Verdade Lógica",
+      "back": "A verdade lógica é uma propriedade de proposições ou expressões que são sempre verdadeiras, independentemente dos valores-verdade das variáveis envolvidas. A verdade lógica é representada pelo valor-verdade \"V\"."
+    },
+    {
+      "front": "Contradição",
+      "back": "Uma contradição é uma proposição ou expressão lógica que é sempre falsa, independentemente dos valores-verdade das variáveis envolvidas. Uma contradição é representada pelo valor-verdade \"F\"."
+    },
+    {
+      "front": "Lei do Conjuntor Verdade Lógica",
+      "back": "A Lei do Conjuntor Verdade Lógica estabelece que uma conjunção que inclui uma proposição verdadeira é logicamente equivalente à outra proposição. Isso significa que se uma das proposições em uma conjunção é verdadeira, a conjunção como um todo é verdadeira."
+    },
+    {
+      "front": "Lei do Disjuntor Contraditório",
+      "back": "A Lei do Disjuntor Contraditório afirma que uma disjunção que inclui uma proposição falsa é logicamente equivalente à outra proposição. Isso significa que se uma das proposições em uma disjunção é falsa, a disjunção como um todo é equivalente à outra proposição."
+    },
+    {
+      "front": "Forma Normal Disjuntiva",
+      "back": "A Forma Normal Disjuntiva é uma forma canônica de representar expressões lógicas em que as proposições são combinadas usando operadores de conjunção e disjunção. Cada expressão lógica pode ser representada como uma conjunção de cláusulas, onde cada cláusula é uma disjunção de proposições."
+    },
+    {
+      "front": "Funcionalmente Completo",
+      "back": "Funcionalmente completo refere-se a um conjunto de operadores lógicos que pode ser usado para representar qualquer função lógica. Isso significa que, com um conjunto funcionalmente completo de operadores, é possível expressar qualquer expressão lógica em termos desses operadores."
+    },
+    {
+      "front": "NAND",
+      "back": "NAND é um operador lógico que significa \"não e\". É funcionalmente completo, o que significa que pode ser usado para representar qualquer função lógica. A saída de uma operação NAND é falsa apenas quando ambas as entradas são verdadeiras."
+    }
+  ]
 }
