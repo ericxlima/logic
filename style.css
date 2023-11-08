@@ -153,9 +153,20 @@ body {
   padding: auto 0;
 }
 
+@media (min-width: 768px) {
+  .scroll-to-top {
+    width: 80px;
+    height: 80px;
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+}
+
 .scroll-to-top:hover {
   background-color: var(--secondary);
 }
+
+
 
 footer {
   margin-top: 1rem;
