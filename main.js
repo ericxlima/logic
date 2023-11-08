@@ -23,7 +23,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
             </h3>
           </div>
           <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body list-of-cards">
             </div>
           </div>
         `;
