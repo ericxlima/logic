@@ -9,20 +9,24 @@
       "back": "Um argumento é uma sequência de afirmações (premissas) que levam a uma conclusão. A lógica é usada para avaliar se um argumento é válido, ou seja, se as premissas realmente suportam a conclusão."
     },
     {
-      "front": "Argumento Dedutivo Válido",
-      "back": "um argumento em que, sem exceções, se as premissas são verdadeiras então a conclusão também será verdadeira."
-    },
-    {
-      "front": "Bom Argumento Indutivo",
-      "back": "um argumento em que as premissas fornecem boas razões para se acreditar na conclusão. Em um argumento indutivo, as premissas tornam a conclusão verossímel, mas a conclusão pode ser falsa mesmo se aspremissas forem verdadeiras"
-    },
-    {
       "front": "Argumento Dedutivo",
-      "back": "Um argumento dedutivo é aquele em que se afirma que a conclusão segue necessariamente das premissas. Em um argumento dedutivo, a validade é fundamental."
+      "back": "Um argumento dedutivo é uma forma de raciocínio em que a conclusão é uma inferência lógica que segue necessariamente das premissas. Se as premissas são verdadeiras, a conclusão deve ser verdadeira."
+    },
+    {
+      "front": "Argumento Dedutivo Válido",
+      "back": "Um argumento dedutivo válido é um tipo específico de argumento dedutivo em que a conclusão realmente segue logicamente das premissas, e a conclusão deve ser verdadeira.\nEx:Todos os homens são mortais. (premissa)\nSócrates é um homem. (premissa)\nPortanto, Sócrates é mortal. (conclusão)"
+    },
+    {
+      "front": "Argumento Dedutivo Inválido",
+      "back": "Um argumento dedutivo inválido é um tipo específico de argumento dedutivo em que a conclusão segue logicamente das premissas, mas a conclusão é falsa."
     },
     {
       "front": "Argumento Indutivo",
       "back": "Um argumento indutivo é aquele em que as premissas fornecem evidências para apoiar a conclusão, mas a conclusão não segue necessariamente das premissas."
+    },
+    {
+      "front": "Bom Argumento Indutivo",
+      "back": "um argumento em que as premissas fornecem boas razões para se acreditar na conclusão. Em um argumento indutivo, as premissas tornam a conclusão verossímel, mas a conclusão pode ser falsa mesmo se aspremissas forem verdadeiras"
     },
     {
       "front": "Sentença Atômica",
