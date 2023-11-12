@@ -105,15 +105,72 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function filterCards(searchText) {
-  const flashcards = document.querySelectorAll(".flashcard");
+  const accordionContainer = document.querySelector('.accordion-container');
+  const searchResultsContainer = document.querySelector('.search-results-container');
+  const cardList = document.querySelector(".list-of-cards-2");
 
-  flashcards.forEach((flashcard) => {
-    const frontText = flashcard.querySelector(".flashcard__face--front h2").textContent.toLowerCase();
-    const isVisible = frontText.includes(searchText.toLowerCase());
+  // Limpa a lista antes de adicionar os cartões filtrados
+  cardList.innerHTML = "";
 
-    flashcard.style.display = isVisible ? "block" : "none";
+  // Exibir ou ocultar divs com base nos resultados da pesquisa
+  if (searchText.length > 0) {
+    accordionContainer.style.display = "none";
+    searchResultsContainer.style.display = "block";
+  } else {
+    accordionContainer.style.display = "block";
+    searchResultsContainer.style.display = "none";
+  }
+
+  const filteredCards = [];
+
+  allCards.forEach((capituloData) => {
+    const capitulo = capituloData[0].chapter; // Adapte conforme necessário
+
+    const filteredCapituloData = capituloData.filter((carta) => {
+      return carta.front.toLowerCase().includes(searchText.toLowerCase());
+    });
+
+    if (filteredCapituloData.length > 0) {
+      filteredCards.push({ [capitulo]: filteredCapituloData });
+
+      filteredCapituloData.forEach((carta) => {
+        const cardDiv = document.createElement('div');
+        cardDiv.classList.add('flashcard');
+
+        cardDiv.innerHTML = `
+          <div class="flashcard__inner">
+            <div class="flashcard__face flashcard__face--front">
+              <h2>${carta.front}</h2>
+            </div>
+            <div class="flashcard__face flashcard__face--back">
+              <div class="flashcard__content">
+                <div class="flashcard__header">
+                  <h2>${carta.front}</h2>
+                </div>
+                <div class="flashcard__body">
+                  <p>${carta.back}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+
+        cardList.appendChild(cardDiv);
+
+        // Adicione o evento de clique dentro do loop para cada carta
+        const flashcard = cardDiv.querySelector(".flashcard__inner");
+
+        flashcard.addEventListener("click", function (e) {
+          flashcard.classList.toggle("is-flipped");
+        });
+      });
+    }
   });
+
+  return filteredCards;
 }
+
+
 
 const searchInput = document.getElementById("searchInput");
 
