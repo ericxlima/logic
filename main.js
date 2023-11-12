@@ -103,3 +103,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+function filterCards(searchText) {
+  const flashcards = document.querySelectorAll(".flashcard");
+
+  flashcards.forEach((flashcard) => {
+    const frontText = flashcard.querySelector(".flashcard__face--front h2").textContent.toLowerCase();
+    const isVisible = frontText.includes(searchText.toLowerCase());
+
+    flashcard.style.display = isVisible ? "block" : "none";
+  });
+}
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function (e) {
+  const searchText = e.target.value;
+  filterCards(searchText);
+});
