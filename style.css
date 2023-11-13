@@ -179,3 +179,7 @@ footer {
 .p {
   margin-bottom: auto;
 }
+
+.search-results-container {
+  display: none;
+}
