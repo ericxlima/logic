@@ -1,59 +1,75 @@
 {
   "Capítulo 1 - Ideias básicas e ferramentas": [
     {
+      "front": "Proposição",
+      "back": "Sentenças declarativas e afirmativa ou negativa que é verdadeira ou falsa. Ex: O sol é uma estrela."
+    },
+    {
+      "front": "Inferência",
+      "back": "Processo de determinar uma verdade a partir de outra."
+    },
+    {
       "front": "Premissa",
-      "back": "Premissas de um argumento são sentenças declarativas que apoiam, ou nos dão razões para acreditar na conclusão."
+      "back": "Proposição que é aceita como verdadeira sem a necessidade de prova dentro de um argumento lógico.\nEx: \nPremissa 1: \"Todos os seres humanos são mortais.\"\nPremissa 2: \"Sócrates é um ser humano.\"\nEssas premissas são usadas para deduzir a conclusão: \"Portanto, Sócrates é mortal.\""
     },
     {
       "front": "Argumento",
-      "back": "Um argumento é uma sequência de afirmações (premissas) que levam a uma conclusão. A lógica é usada para avaliar se um argumento é válido, ou seja, se as premissas realmente suportam a conclusão."
+      "back": "Uma sequência de premissas que levam a uma conclusão.\nEx: \nPremissa 1: \"Todos os seres humanos são mortais.\"\nPremissa 2: \"Sócrates é um ser humano.\"\nConclusão: \"Portanto, Sócrates é mortal.\""
     },
     {
       "front": "Argumento Dedutivo",
       "back": "Um argumento dedutivo é uma forma de raciocínio em que a conclusão é uma inferência lógica que segue necessariamente das premissas. Se as premissas são verdadeiras, a conclusão deve ser verdadeira."
     },
     {
-      "front": "Argumento Dedutivo Válido",
-      "back": "Um argumento dedutivo válido é um tipo específico de argumento dedutivo em que a conclusão realmente segue logicamente das premissas, e a conclusão deve ser verdadeira.\nEx:Todos os homens são mortais. (premissa)\nSócrates é um homem. (premissa)\nPortanto, Sócrates é mortal. (conclusão)"
+      "front": "Argumento Dedutivo Inválido",
+      "back": "É quando não é logicamente possível chegar à conclusão a partir das premissas.\nEx: Todos os homens são mortais. (premissa)\nTodos os mamíferos são mortais. (premissa)\nPortanto, homens são mamíferos. (conclusão)"
     },
     {
-      "front": "Argumento Dedutivo Inválido",
-      "back": "Um argumento dedutivo inválido é um tipo específico de argumento dedutivo em que a conclusão segue logicamente das premissas, mas a conclusão é falsa."
+      "front": "Argumento Dedutivo Válido",
+      "back": "É quando é logicamente possível chegar à conclusão a partir das premissas.\nEx:Todas as aranhas tem 6 patas. (premissa)\nSeres de 6 patas tem asas. (premissa)\nPortanto, aranhas tem asas. (conclusão)"
     },
     {
       "front": "Argumento Indutivo",
-      "back": "Um argumento indutivo é aquele em que as premissas fornecem evidências para apoiar a conclusão, mas a conclusão não segue necessariamente das premissas."
+      "back": "É quando a conclusão é uma generalização baseada em observações ou evidências, a conclusão pode ser provável, mas não necessariamente certa."
     },
     {
-      "front": "Bom Argumento Indutivo",
-      "back": "um argumento em que as premissas fornecem boas razões para se acreditar na conclusão. Em um argumento indutivo, as premissas tornam a conclusão verossímel, mas a conclusão pode ser falsa mesmo se aspremissas forem verdadeiras"
+      "front": "Argumento Indutivo Bom",
+      "back": "Um argumento em que as premissas fornecem boas razões para se acreditar na conclusão.\nEx: Durante 10 anos, o preço das casas aumentou.\nAs taxas de emprego também aumentaram no mesmo período.\nPortanto, é provável que a valorização das casas esteja relacionada ao aumento nas taxas de emprego."
+    },
+    {
+      "front": "Argumento Indutivo Ruim",
+      "back": "Um argumento com falhas, generalizações precipitadas, amostras não representativas ou falta de evidências suficientes. \nEx: Vi cinco corvos e todos eram pretos.\nPortanto, todos os corvos são pretos."
     },
     {
       "front": "Sentença Atômica",
-      "back": "Uma sentença atômica (ou proposição atômica) é uma afirmação simples que não pode ser dividida em partes menores com significado lógico independente. Exemplos incluem \"A Terra é redonda\" ou \"Hoje é segunda-feira\"."
+      "back": "Proposição atômica. São afirmações simples que não podem ser divididas em partes menores.\nEx:\n\"A Terra é redonda\" ou \"Hoje é segunda-feira\"."
     },
     {
-      "front": "Sentença Composta",
-      "back": "Uma sentença composta é construída a partir de sentenças atômicas usando conectivos lógicos. Ela pode ser dividida em partes menores (as sentenças atômicas) e possui uma estrutura lógica. Exemplos incluem \"Se chover, então o chão ficará molhado.\""
+      "front": "Variáveis",
+      "back": "Uma representação sintática das sentenças atômicas, normalmente denotados por letras minúsculas como p, q, r, s, t, u, v, w, x, y, z."
     },
     {
-      "front": "Conectivo",
-      "back": "Um conectivo lógico é um termo usado para combinar ou alterar o significado de sentenças lógicas. Alguns exemplos comuns de conectivos são \"e\" (conjunção), \"ou\" (disjunção), \"se... então\" (implicação), \"se e somente se\" (equivalência)."
+      "front": "Constantes",
+      "back": "Uma representação sintática dos valores-verdade (Verdadeiro e Falso).\nEx:\nV e F\nT, ⊥.\n1 e 0."
     },
     {
-      "front": "Componente",
-      "back": "Em um contexto lógico, um componente pode se referir a partes de uma sentença composta, como as sentenças atômicas ou os conectivos que a compõem. Ex: quando escrevemos  \"A ∧ B\". \"A\" e \"B\" são chamados de Conjuntores ou Componentes de \"A ∧ B\""
+      "front": "Conectivos",
+      "back": "Um conectivo lógico é um termo usado para combinar variáveis e contantes ou alterar o significado de proposições. Os conectivos mais populares são \"¬\"(negação) \"∧\"(conjunção), \"∨\"(disjunção), \"se... então\"(implicação), \"se e somente se\"(equivalência). "
     },
     {
-      "front": "¬ \"Sinal de Negação\"",
+      "front": "Auxiliáres",
+      "back": "São os parênteses, colchetes e chaves usados para indicar a ordem de avaliação de uma expressão lógica. \nEx: {[(p ∧ q) ∨ r] ∨ s}"
+    },
+    {
+      "front": "Sentenças Compostas / Complexas",
+      "back": "Podem ser divididas em partes menores (as sentenças atômicas) e possuem uma estrutura lógica.\nEx:\"Eu sou legal e o dia é lindo.\""
+    },
+    {
+      "front": "¬ \"- Sinal de Negação\"",
       "back": "O símbolo ¬ (também chamado de til ou não) é um operador lógico que denota negação. Ele inverte o valor-verdade de uma proposição. Por exemplo, se P é verdadeira, ¬P será falsa."
     },
     {
-      "front": "Negação",
-      "back": "A negação é uma operação lógica que inverte o valor-verdade de uma proposição. É frequentemente representada pelo símbolo ¬."
-    },
-    {
-      "front": "∧ \"Sinal de Conjunção\"",
+      "front": "∧ \"- Sinal de Conjunção\"",
       "back": "O símbolo ∧ (também chamado de \"E\" lógico ou operador \"E\") é usado para denotar a conjunção lógica. Em uma expressão lógica, a conjunção é verdadeira somente se ambas as proposições unidas por ∧ forem verdadeiras."
     },
     {
