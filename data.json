@@ -273,10 +273,6 @@
       "back": "Uma linha de escopo é usada para indicar a área em que uma suposição temporária ou subderivação se aplica. Ela ajuda a identificar o alcance de regras de inferência específicas dentro da derivação."
     },
     {
-      "front": "Premissa",
-      "back": "Uma premissa é uma proposição ou afirmação usada como ponto de partida em um argumento lógico. Elas são aceitas como verdadeiras para fins de argumentação e são usadas para derivar conclusões."
-    },
-    {
       "front": "Suposição",
       "back": "Uma suposição é uma proposição temporária assumida durante uma derivação para fins de raciocínio. As suposições são usadas para justificar a aplicação de regras de inferência e são geralmente descartadas quando não são mais necessárias."
     },
