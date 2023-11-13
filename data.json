@@ -117,7 +117,7 @@
       "back": "O conectivo principal em uma expressão lógica é o operador lógico que tem a maior prioridade e afeta a estrutura da expressão. \nEx: Em (p∧q)→s, → é o conectivo principal."
     },
     {
-      "front":"Satisfatível (SAT)",
+      "front": "Satisfatível (SAT)",
       "back": "Uma expressão lógica é satisfatível se houver pelo menos uma atribuição de valores-verdade às variáveis que a torna verdadeira."
     },
     {
@@ -125,7 +125,7 @@
       "back": "Uma expressão lógica é refutável se houver pelo menos uma atribuição de valores-verdade às variáveis que a torna falsa."
     },
     {
-      "front":"Tautologia (TAUT)",
+      "front": "Tautologia (TAUT)",
       "back": "Uma expressão lógica é uma tautologia se todas as suas atribuições de valores-verdade a tornam verdadeira."
     },
     {

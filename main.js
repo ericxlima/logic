@@ -51,7 +51,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
                       <h2>${carta.front}</h2>
                     </div>
                     <div class="flashcard__body">
-                      <p>${carta.back}</p>
+                      <p>${carta.back.replace(/\n/g, '<br>')}</p>
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ function filterCards(searchText) {
               <h2>${carta.front}</h2>
             </div>
             <div class="flashcard__body">
-              <p>${carta.back}</p>
+              <p>${carta.back.replace(/\n/g, '<br>')}</p>
             </div>
           </div>
         </div>
