@@ -237,7 +237,7 @@
       "back": "Uma linha de escopo é usada para indicar a área em que uma suposição temporária ou subderivação se aplica. Ela ajuda a identificar o alcance de regras de inferência específicas dentro da derivação."
     },
     {
-      "front": "Suposição",
+      "front": "Suposição ou Hipótese ou Assunção",
       "back": "Uma suposição é uma proposição temporária assumida durante uma derivação para fins de raciocínio. As suposições são usadas para justificar a aplicação de regras de inferência e são geralmente descartadas quando não são mais necessárias."
     },
     {
@@ -245,60 +245,52 @@
       "back": "Uma regra de inferência é uma diretriz ou princípio que governa o processo de dedução. Elas especificam como se pode justificar a conclusão de um argumento com base nas premissas dadas e nas regras lógicas."
     },
     {
-      "front": "Licença (para escrever uma conclusão)",
-      "back": "A licença para escrever uma conclusão é uma regra que permite derivar uma conclusão lógica com base nas premissas e na aplicação apropriada das regras de inferência. Ela estabelece as condições sob as quais uma conclusão pode ser afirmada."
-    },
-    {
-      "front": "Regra que preserva a verdade",
-      "back": "Uma regra que preserva a verdade é uma regra de inferência que garante que, se as premissas são verdadeiras, a conclusão derivada também será verdadeira. Essas regras garantem a validade da dedução."
-    },
-    {
       "front": "Dispensar uma suposição",
       "back": "Dispensar uma suposição é o processo de encerrar uma suposição temporária que não é mais necessária na derivação. Isso pode ser feito quando a suposição não contribui mais para a prova da conclusão."
     },
     {
+      "front": "Eliminação da Implicação",
+      "back": "A → B\nA\n_____\nB"
+    },
+    {
+      "front": "Introdução da Implicação",
+      "back": "Dado uma subderivação com a hipótese A, se B for verdadeiro, então A -> B é verdadeiro.\n_____\nA -> B"
+    },
+    {
       "front": "Introdução da Conjunção",
-      "back": "A introdução da conjunção é uma regra de inferência que permite combinar duas proposições em uma única proposição conjunta usando o operador lógico ∧ (E). Ela é usada para criar uma conjunção a partir de duas proposições."
+      "back": "A\nB\n_____\nA ∧ B"
     },
     {
       "front": "Eliminação da Conjunção",
-      "back": "A eliminação da conjunção é uma regra de inferência que permite decompor uma proposição conjunta em suas duas proposições componentes. É usada para extrair informações de uma conjunção."
+      "back": "A ∧ B\n_____\nA\n*ou*\nA ∧ B\n_____\nB"
     },
     {
       "front": "Introdução da Disjunção",
-      "back": "A introdução da disjunção é uma regra de inferência que permite criar uma proposição disjuntiva a partir de duas proposições individuais. Ela é usada quando se deseja afirmar que pelo menos uma das proposições é verdadeira."
+      "back": "A\n_____\nA ∨ B\n*ou*\nB\n_____\nA ∨ B"
     },
     {
       "front": "Eliminação da Disjunção",
-      "back": "A eliminação da disjunção é uma regra de inferência que permite explorar as consequências de uma proposição disjuntiva, considerando os casos separadamente. Ela é usada para justificar conclusões com base nas alternativas disjuntivas."
-    },
-    {
-      "front": "Introdução do Condicional",
-      "back": "A introdução do condicional é uma regra de inferência que permite estabelecer um condicional a partir de premissas. Ela é usada para afirmar que, se uma proposição é verdadeira, então outra proposição também é verdadeira."
-    },
-    {
-      "front": "Eliminação do Condicional",
-      "back": "A eliminação do condicional é uma regra de inferência que permite explorar as implicações de um condicional, considerando o antecedente e as consequências. Ela é usada para justificar conclusões com base na condição estabelecida pelo condicional."
+      "back": "A ∨ B\n¬A\n_____\nB\n*ou*\nA ∨ B\n¬B\n_____\nA"
     },
     {
       "front": "Introdução do Bicondicional",
-      "back": "A introdução do bicondicional é uma regra de inferência que permite afirmar que duas proposições são logicamente equivalentes, ou seja, verdadeiras ou falsas juntas. Ela é usada para estabelecer a equivalência entre proposições."
+      "back": "A → B\nB → A\n_____\nA ⇔ B"
     },
     {
       "front": "Eliminação do Bicondicional",
-      "back": "A eliminação do bicondicional é uma regra de inferência que permite explorar as implicações de um bicondicional, considerando as duas direções da equivalência. Ela é usada para justificar conclusões com base nas relações de equivalência."
+      "back": "A ⇔ B\n_____\nA → B\nB → A"
     },
     {
       "front": "Introdução da Negação",
-      "back": "A introdução da negação é uma regra de inferência que permite afirmar a negação de uma proposição com base em uma dedução que demonstra a falsidade da proposição original. Ela é usada para justificar a negação de uma proposição."
+      "back": "Se uma suposição A leva a uma contradição, então a negação da suposição é verdadeira.\n_____\n¬A"
     },
     {
       "front": "Eliminação da Negação",
-      "back": "A eliminação da negação é uma regra de inferência que permite afirmar a verdade de uma proposição negada, com base em uma dedução que demonstra a falsidade da negação. Ela é usada para justificar a afirmação de uma proposição."
+      "back": "¬¬A\n_____\nA"
     },
     {
       "front": "Reiteração",
-      "back": "A reiteração é uma regra de inferência que permite afirmar novamente uma proposição já derivada em uma derivação, reafirmando sua verdade. Ela é usada quando se deseja enfatizar ou utilizar novamente uma proposição previamente estabelecida."
+      "back": "É uma regra de inferência que permite afirmar novamente uma proposição já derivada em uma derivação ou subderivação dentro de seu escopo, reafirmando sua verdade."
     }
   ],
   "Capítulo 6 - Estratégias em Dedução Natural para Lógica Sentencial": [
