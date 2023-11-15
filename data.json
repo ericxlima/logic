@@ -21,14 +21,6 @@
       "back": "Um argumento dedutivo é uma forma de raciocínio em que a conclusão é uma inferência lógica que segue necessariamente das premissas. Se as premissas são verdadeiras, a conclusão deve ser verdadeira."
     },
     {
-      "front": "Argumento Dedutivo Inválido",
-      "back": "É quando não é logicamente possível chegar à conclusão a partir das premissas.\nEx: Todos os homens são mortais. (premissa)\nTodos os mamíferos são mortais. (premissa)\nPortanto, homens são mamíferos. (conclusão)"
-    },
-    {
-      "front": "Argumento Dedutivo Válido",
-      "back": "É quando é logicamente possível chegar à conclusão a partir das premissas.\nEx:Todas as aranhas tem 6 patas. (premissa)\nSeres de 6 patas tem asas. (premissa)\nPortanto, aranhas tem asas. (conclusão)"
-    },
-    {
       "front": "Argumento Indutivo",
       "back": "É quando a conclusão é uma generalização baseada em observações ou evidências, a conclusão pode ser provável, mas não necessariamente certa."
     },
@@ -57,7 +49,7 @@
       "back": "Um conectivo lógico é um termo usado para combinar variáveis e contantes ou alterar o significado de proposições. Os conectivos mais populares são \"¬\"(negação) \"∧\"(conjunção), \"∨\"(disjunção), \"se... então\"(implicação), \"se e somente se\"(equivalência). "
     },
     {
-      "front": "Auxiliáres",
+      "front": "Auxiliares",
       "back": "São os parênteses, colchetes e chaves usados para indicar a ordem de avaliação de uma expressão lógica. \nEx: {[(p ∧ q) ∨ r] ∨ s}"
     },
     {
@@ -73,23 +65,19 @@
       "back": "O símbolo ∧ (também chamado de \"E\" lógico ou operador \"E\") é usado para denotar a conjunção lógica. Em uma expressão lógica, a conjunção será verdadeira se e somente se ambas as proposições forem verdadeiras."
     },
     {
-      "front": "∨ \"Sinal de Disjunção\"",
+      "front": "∨ \"- Sinal de Disjunção\"",
       "back": "O símbolo ∨ (também chamado de \"OU\" lógico ou operador \"OU\") é usado para denotar a disjunção lógica. Em uma expressão lógica, a disjunção será verdadeira se pelo menos uma das proposições unidas por ∨ for verdadeira."
     },
     {
-      "front": "→ \"Sinal de Implicação\"",
+      "front": "→ \"- Sinal de Implicação\"",
       "back": "O símbolo → (também chamado de \"se... então...\" ou operador de implicação) é usado para denotar a implicação lógica. Em uma expressão lógica, a implicação é verdadeira se a proposição antecedente for falsa ou se a proposição consequente for verdadeira."
     },
     {
-      "front": "↔ \"Sinal de Equivalência\"",
+      "front": "↔ \"- Sinal de Bi-implicação\"",
       "back": "O símbolo ↔ (também chamado de \"se e somente se\" ou operador de equivalência) é usado para denotar a equivalência lógica. Em uma expressão lógica, a equivalência é verdadeira se as proposições unidas por ↔ tiverem o mesmo valor-verdade."
     },
     {
-      "front": "Ou Inclusivo (∨)",
-      "back": "O \"OU\" inclusivo é um tipo de disjunção, na qual a disjunção é verdadeira se pelo menos uma das proposições for verdadeira. Pode ser usado de forma inclusiva, o que significa que ambas as proposições também podem ser verdadeiras.\nEx: T∨T=T, T∨F=T, F∨T=T, F∨F=F"
-    },
-    {
-      "front": "Ou Exclusivo (⊕)",
+      "front": "⊕ \"- Sinal de Ou Exclusivo\"",
       "back": "O \"OU\" exclusivo é um tipo de disjunção, na qual a disjunção é verdadeira se apenas uma das proposições for verdadeira. Pode ser usado de forma exclusiva, o que significa que ambas as proposições não podem ser verdadeiras.\nEx: T⊕T=F, T⊕F=T, F⊕T=T, F⊕F=F"
     },
     {
@@ -102,7 +90,7 @@
     },
     {
       "front": "Função-verdade",
-      "back": "Uma Função-Verdade é uma regra que, quando você lhe fornece valores-verdade de entrada, ela lhe dá um valor-verdade de saída definido"
+      "back": "Uma Função-Verdade é uma regra que, quando você lhe fornece valores-verdade de entrada, ela lhe dá um valor-verdade de saída definido. \nEx: I(p)=T"
     },
     {
       "front": "Conectivo verofuncional",
@@ -125,11 +113,11 @@
       "back": "Uma expressão lógica é refutável se houver pelo menos uma atribuição de valores-verdade às variáveis que a torna falsa."
     },
     {
-      "front": "Tautologia (TAUT)",
+      "front": "Tautologia (TAUT) / Verdade Lógica",
       "back": "Uma expressão lógica é uma tautologia se todas as suas atribuições de valores-verdade a tornam verdadeira."
     },
     {
-      "front": "Insatisfatível (INSAT)",
+      "front": "Insatisfatível (INSAT) / Contradição",
       "back": "Uma expressão lógica é insatisfatível se nenhuma atribuição de valores-verdade às variáveis a torna verdadeira."
     }
   ],
@@ -145,40 +133,40 @@
   ],
   "Capítulo 3 - Equivalência Lógica, Verdades Lógicas e Contradições": [
     {
-      "front": "Equivalência Lógica",
-      "back": "A equivalência lógica é uma relação entre duas expressões lógicas que têm o mesmo valor-verdade para todas as atribuições possíveis de valores-verdade às variáveis envolvidas. Duas expressões são consideradas logicamente equivalentes se produzem os mesmos resultados."
+      "front": "≡ \"- Equivalência Lógica\"",
+      "back": "Duas expressões são consideradas logicamente equivalentes se para todas as atribuições possíveis de valores-verdade às variáveis envolvidas produzem os mesmos resultados."
     },
     {
-      "front": "Consequência Lógica",
-      "back": "A consequência lógica é uma relação entre duas expressões lógicas em que uma expressão é logicamente consequência da outra. Isso significa que se a primeira expressão é verdadeira, então a segunda expressão também deve ser verdadeira."
+      "front": "⊨ \"Consequência Lógica\"",
+      "back": "Se a primeira expressão é verdadeira, então a segunda expressão também deve ser verdadeira, por consequência lógica."
     },
     {
       "front": "Diagrama de Venn",
       "back": "Um diagrama de Venn é uma representação gráfica usada para ilustrar a relação entre conjuntos e suas interseções. Pode ser usado na lógica para mostrar a relação entre conjuntos de valores-verdade de proposições."
     },
     {
-      "front": "Lei da Dupla Negação",
-      "back": "A Lei da Dupla Negação afirma que a negação de uma negação de uma proposição é logicamente equivalente à proposição original. Em notação simbólica, ¬(¬P) é equivalente a P."
-    },
-    {
-      "front": "Leis de De Morgan",
-      "back": "As Leis de De Morgan são duas regras que descrevem como negar conjunções e disjunções. A primeira lei afirma que a negação de uma conjunção é logicamente equivalente à disjunção das negações. A segunda lei afirma que a negação de uma disjunção é logicamente equivalente à conjunção das negações."
-    },
-    {
-      "front": "Leis Distributivas",
-      "back": "As Leis Distributivas são regras que descrevem a distribuição de operadores lógicos. Elas indicam como um operador lógico pode ser distribuído sobre outro. Essas leis são importantes na simplificação de expressões lógicas."
-    },
-    {
       "front": "Lei da Substituição de Equivalentes Lógicos",
       "back": "A Lei da Substituição de Equivalentes Lógicos afirma que se duas expressões são logicamente equivalentes, você pode substituir uma pela outra em uma prova lógica sem afetar a validade da prova."
     },
     {
-      "front": "Lei da Transitividade da Equivalência Lógica",
-      "back": "A Lei da Transitividade da Equivalência Lógica afirma que se duas expressões são logicamente equivalentes a uma terceira expressão, então as duas primeiras também são logicamente equivalentes entre si. Isso permite estabelecer relações de equivalência em cadeia."
+      "front": "Lei da Dupla Negação",
+      "back": "A Lei da Dupla Negação afirma que a negação de uma negação de uma proposição é logicamente equivalente à proposição original.\nEm notação simbólica: ¬(¬P) ≡ P."
+    },
+    {
+      "front": "Leis de De Morgan",
+      "back": "As Leis de De Morgan são duas regras que descrevem como negar conjunções e disjunções.\nEm notação simbólica: \n¬(P∧Q) ≡ ¬P∨¬Q   e\n¬(P∨Q) ≡ ¬P∧¬Q."
+    },
+    {
+      "front": "Leis Distributivas",
+      "back": "As Leis Distributivas são regras que descrevem a distribuição de operadores lógicos.\nEm notação simbólica: \nP∧(Q∨R) ≡ (P∧Q)∨(P∧R)   e\nP∨(Q∧R) ≡ (P∨Q)∧(P∨R)."
+    },
+    {
+      "front": "Lei da Transitividade",
+      "back": "A Lei da Transitividade da Equivalência Lógica afirma que se duas expressões são logicamente equivalentes a uma terceira expressão, então as duas primeiras também são logicamente equivalentes entre si.\nEx: Se P≡Q e Q≡R, então P≡R."
     },
     {
       "front": "Leis Comutativas",
-      "back": "As Leis Comutativas são regras que afirmam que a ordem das proposições não afeta o valor-verdade de uma expressão lógica. Nas leis comutativas, a ordem de operadores como ∧ (E) e ∨ (OU) pode ser trocada sem alterar o resultado."
+      "back": "Nas leis comutativas, a ordem de operadores como ∧ (E) e ∨ (OU) pode ser trocada sem alterar o valor-verdade da expressão.\nEm notação simbólica: \nP∧Q ≡ Q∧P   e\nP∨Q ≡ Q∨P."
     },
     {
       "front": "Lei da Associatividade",
@@ -186,53 +174,49 @@
     },
     {
       "front": "Lei da Redundância",
-      "back": "A Lei da Redundância estabelece que incluir a mesma proposição em uma conjunção ou disjunção lógica é redundante. A proposição não afeta o valor-verdade da expressão."
-    },
-    {
-      "front": "Verdade Lógica",
-      "back": "A verdade lógica é uma propriedade de proposições ou expressões que são sempre verdadeiras, independentemente dos valores-verdade das variáveis envolvidas. A verdade lógica é representada pelo valor-verdade \"V\"."
-    },
-    {
-      "front": "Contradição",
-      "back": "Uma contradição é uma proposição ou expressão lógica que é sempre falsa, independentemente dos valores-verdade das variáveis envolvidas. Uma contradição é representada pelo valor-verdade \"F\"."
+      "back": "A Lei da Redundância estabelece que incluir a mesma proposição em uma conjunção ou disjunção lógica é redundante. A proposição não afeta o valor-verdade da expressão.\nEx: P∧P ≡ P e P∨P ≡ P."
     },
     {
       "front": "Lei do Conjuntor Verdade Lógica",
-      "back": "A Lei do Conjuntor Verdade Lógica estabelece que uma conjunção que inclui uma proposição verdadeira é logicamente equivalente à outra proposição. Isso significa que se uma das proposições em uma conjunção é verdadeira, a conjunção como um todo é verdadeira."
+      "back": "A Lei do Conjuntor Verdade Lógica estabelece que uma conjunção que inclui uma proposição verdadeira é logicamente equivalente à outra proposição. \nEx: P∧V ≡ P."
     },
     {
       "front": "Lei do Disjuntor Contraditório",
-      "back": "A Lei do Disjuntor Contraditório afirma que uma disjunção que inclui uma proposição falsa é logicamente equivalente à outra proposição. Isso significa que se uma das proposições em uma disjunção é falsa, a disjunção como um todo é equivalente à outra proposição."
+      "back": "A Lei do Disjuntor Contraditório afirma que uma disjunção que inclui uma proposição falsa é logicamente equivalente à outra proposição. \nEx: P∨F ≡ P."
     },
     {
       "front": "Forma Normal Disjuntiva",
-      "back": "A Forma Normal Disjuntiva é uma forma canônica de representar expressões lógicas em que as proposições são combinadas usando operadores de conjunção e disjunção. Cada expressão lógica pode ser representada como uma conjunção de cláusulas, onde cada cláusula é uma disjunção de proposições."
+      "back": "A Forma Normal Disjuntiva é uma forma canônica de representar expressões lógicas em que as proposições são combinadas usando operadores de conjunção e disjunção. \nEx: (P∧Q)∨(¬P∧R)∨(¬Q∧¬R)."
     },
     {
-      "front": "Funcionalmente Completo",
-      "back": "Funcionalmente completo refere-se a um conjunto de operadores lógicos que pode ser usado para representar qualquer função lógica. Isso significa que, com um conjunto funcionalmente completo de operadores, é possível expressar qualquer expressão lógica em termos desses operadores."
+      "front": "Forma Normal Conjuntiva",
+      "back": "A Forma Normal Conjuntiva é uma forma canônica de representar expressões lógicas em que as proposições são combinadas usando operadores de conjunção e disjunção. \nEx: (P∨Q)∧(¬P∨R)∧(¬Q∨¬R)."
+    },
+    {
+      "front": "Completude Funcional",
+      "back": "Completude Funcional refere-se a um conjunto de operadores lógicos que pode ser usado para representar qualquer função lógica. Isso significa que, com um conjunto funcionalmente completo de operadores, é possível expressar qualquer expressão lógica em termos desses operadores."
     },
     {
       "front": "NAND",
-      "back": "NAND é um operador lógico que significa \"não e\". É funcionalmente completo, o que significa que pode ser usado para representar qualquer função lógica. A saída de uma operação NAND é falsa apenas quando ambas as entradas são verdadeiras."
+      "back": "NAND é um operador lógico que significa \"não e\". É funcionalmente completo, o que significa que pode ser usado para representar qualquer função lógica. A saída de uma operação NAND é falsa apenas quando ambas as entradas são verdadeiras.\nEx:A ∨ B ≡ (A NAND A) NAND (B NAND B)"
     }
   ],
   "Capítulo 4 - Validade e Condicionais": [
     {
-      "front": "Válido",
-      "back": "Um argumento ou raciocínio é considerado válido quando a conclusão segue necessariamente das premissas. Isso significa que se as premissas são verdadeiras, a conclusão também deve ser verdadeira."
+      "front": "Argumento Dedutivo Inválido",
+      "back": "É quando não é logicamente possível chegar à conclusão a partir das premissas.\nEx: Todos os homens são mortais. (premissa)\nTodos os mamíferos são mortais. (premissa)\nPortanto, homens são mamíferos. (conclusão)"
     },
     {
-      "front": "Inválido",
-      "back": "Um argumento é considerado inválido quando a conclusão não segue necessariamente das premissas. Isso significa que mesmo se as premissas forem verdadeiras, a conclusão pode ser falsa."
+      "front": "Argumento Dedutivo Válido",
+      "back": "É quando é logicamente possível chegar à conclusão a partir das premissas.\nEx:Todas as aranhas tem 6 patas. (premissa)\nSeres de 6 patas tem asas. (premissa)\nPortanto, aranhas tem asas. (conclusão)"
     },
     {
       "front": "Contra-exemplo",
       "back": "Um contra-exemplo é um exemplo específico que mostra que um argumento é inválido. É uma instância em que as premissas são verdadeiras, mas a conclusão é falsa, demonstrando a invalidade do argumento."
     },
     {
-      "front": "Correto",
-      "back": "Um argumento é considerado correto quando suas premissas são verdadeiras, e a conclusão segue necessariamente das premissas, tornando-o válido."
+      "front": "Corretude",
+      "back": "A corretude é uma propriedade de um argumento dedutivo que afirma que, se as premissas são verdadeiras, então a conclusão também deve ser verdadeira. Um argumento dedutivo é correto se for válido e suas premissas forem verdadeiras."
     },
     {
       "front": "Condicional",
