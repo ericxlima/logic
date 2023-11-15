@@ -1,3 +1,5 @@
+let allCards = new Set();
+
 fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
   .then(response => response.json())
   .then(data => {
@@ -35,6 +37,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
         if (Array.isArray(capituloData)) {
           capituloData.forEach((carta, cartaIndex) => {
             const cardDiv = document.createElement('div');
+            allCards.add(carta)
             cardDiv.classList.add('flashcard');
 
             cardDiv.innerHTML = `
@@ -48,7 +51,7 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
                       <h2>${carta.front}</h2>
                     </div>
                     <div class="flashcard__body">
-                      <p>${carta.back}</p>
+                      <p>${carta.back.replace(/\n/g, '<br>')}</p>
                     </div>
                   </div>
                 </div>
@@ -57,7 +60,6 @@ fetch('https://raw.githubusercontent.com/ericxlima/logic/main/data.json')
 
             accordionBody.appendChild(cardDiv);
 
-            // Adicione o evento de clique dentro do loop para cada carta
             const flashcard = cardDiv.querySelector(".flashcard__inner");
 
             flashcard.addEventListener("click", function (e) {
@@ -85,7 +87,6 @@ flashcards.forEach((flashcard) => {
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopButton = document.getElementById("scroll-to-top");
 
-  // Mostrar o botão quando o usuário rolar a página
   window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
       scrollToTopButton.style.display = "block";
@@ -94,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Rolar suavemente para o topo quando o botão for clicado
   scrollToTopButton.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -109,10 +109,8 @@ function filterCards(searchText) {
   const searchResultsContainer = document.querySelector('.search-results-container');
   const cardList = document.querySelector(".list-of-cards-2");
 
-  // Limpa a lista antes de adicionar os cartões filtrados
   cardList.innerHTML = "";
 
-  // Exibir ou ocultar divs com base nos resultados da pesquisa
   if (searchText.length > 0) {
     accordionContainer.style.display = "none";
     searchResultsContainer.style.display = "block";
@@ -121,60 +119,47 @@ function filterCards(searchText) {
     searchResultsContainer.style.display = "none";
   }
 
-  const filteredCards = [];
+  const regex = new RegExp(searchText, "i");
+  let filteredCards = [];
+  filteredCards = [...allCards].filter(card => regex.test(card.front));
 
-  allCards.forEach((capituloData) => {
-    const capitulo = capituloData[0].chapter; // Adapte conforme necessário
+  console.log(filteredCards.length)
 
-    const filteredCapituloData = capituloData.filter((carta) => {
-      return carta.front.toLowerCase().includes(searchText.toLowerCase());
-    });
-
-    if (filteredCapituloData.length > 0) {
-      filteredCards.push({ [capitulo]: filteredCapituloData });
-
-      filteredCapituloData.forEach((carta) => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('flashcard');
-
-        cardDiv.innerHTML = `
-          <div class="flashcard__inner">
-            <div class="flashcard__face flashcard__face--front">
+  filteredCards.forEach((carta, cartaIndex) => {
+    const cardDiv = document.createElement('div');
+    cardDiv.classList.add('flashcard');
+    cardDiv.innerHTML = `
+      <div class="flashcard__inner">
+        <div class="flashcard__face flashcard__face--front">
+          <h2>${carta.front}</h2>
+        </div>
+        <div class="flashcard__face flashcard__face--back">
+          <div class="flashcard__content">
+            <div class="flashcard__header">
               <h2>${carta.front}</h2>
             </div>
-            <div class="flashcard__face flashcard__face--back">
-              <div class="flashcard__content">
-                <div class="flashcard__header">
-                  <h2>${carta.front}</h2>
-                </div>
-                <div class="flashcard__body">
-                  <p>${carta.back}</p>
-                </div>
-              </div>
+            <div class="flashcard__body">
+              <p>${carta.back.replace(/\n/g, '<br>')}</p>
             </div>
           </div>
-        `;
-
-        cardList.appendChild(cardDiv);
-
-        // Adicione o evento de clique dentro do loop para cada carta
-        const flashcard = cardDiv.querySelector(".flashcard__inner");
-
-        flashcard.addEventListener("click", function (e) {
-          flashcard.classList.toggle("is-flipped");
-        });
-      });
-    }
-  });
-
-  return filteredCards;
+        </div>
+      </div>
+    `;
+    cardList.appendChild(cardDiv);
+    const flashcard = cardDiv.querySelector(".flashcard__inner");
+    flashcard.addEventListener("click", function (e) {
+      flashcard.classList.toggle("is-flipped");
+    });
+  })
 }
-
-
 
 const searchInput = document.getElementById("searchInput");
 
+let searchTimer;
 searchInput.addEventListener("input", function (e) {
-  const searchText = e.target.value;
-  filterCards(searchText);
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    const searchText = e.target.value;
+    filterCards(searchText);
+  }, 500);
 });

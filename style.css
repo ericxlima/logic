@@ -179,3 +179,14 @@ footer {
 .p {
   margin-bottom: auto;
 }
+
+.search-results-container {
+  margin-top: 2rem;
+  display: none;
+}
+
+.list-of-cards-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
