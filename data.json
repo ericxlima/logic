@@ -295,39 +295,64 @@
   ],
   "Capítulo 6 - Estratégias em Dedução Natural para Lógica Sentencial": [
     {
-      "front": "Estratégia Reductio Ad Absurdum",
-      "back": "A estratégia Reductio ad Absurdum é uma técnica de dedução que envolve a suposição de uma hipótese negada e a busca de uma contradição a partir dessa suposição. Se a suposição leva a uma conclusão falsa ou contraditória, a hipótese negada é considerada verdadeira."
+      "front": "Conectivo Principal",
+      "back": "O Conectivo Principal de uma sentença composta é o conectivo que foi usado por último na construção da sentençaa partir de seu(s) componente(s)."
     },
     {
-      "front": "Conectivo Principal",
-      "back": "O conectivo principal em uma expressão lógica é o operador lógico que está mais externo e tem a maior influência sobre a estrutura da expressão. Identificar o conectivo principal é importante para aplicar regras de inferência corretamente."
+      "front": "Regras Primitivas de Inferência",
+      "back": "Uma regra primitiva, também conhecida como regra básica, é uma regra de inferência fundamental em dedução natural que não depende de regras derivadas. Elas são as regras mais simples e essenciais do sistema de dedução."
+    },
+    {
+      "front": "Conclusão de Conjunção",
+      "back": "Se a conclusão de um argumento é uma conjunção A ∧ B, você pode usar a regra de introdução da conjunção. Isso envolve provar cada parte da conjunção separadamente."
+    },
+    {
+      "front": "Conclusão de Disjunção",
+      "back": "Se a conclusão de um argumento é uma disjunção A ∨ B, você pode usar a regra de introdução da disjunção. Isso envolve provar A ou B e usar a regra para garantir a conclusão."
+    },
+    {
+      "front": "Conclusão de Implicação",
+      "back": "Se a conclusão de um argumento é uma implicação A → B, você pode usar a regra de introdução da implicação. Isso envolve criar uma subderivação com a hipótese A e provar B dentro dessa subderivação."
+    },
+    {
+      "front": "Conclusão de Bicondicional",
+      "back": "Se a conclusão de um argumento é um bicondicional A ⇔ B, você pode usar a regra de introdução do bicondicional. Isso envolve criar duas subderivações, uma com a hipótese A (que leve à B) e outra com a hipótese B (que leve à A), e provar A ⇔ B dentro dessas subderivações."
+    },
+    {
+      "front": "Conclusão de Negação",
+      "back": "Se a conclusão de um argumento é uma negação ¬A, você pode usar a regra de introdução da negação. Isso envolve criar uma subderivação com a hipótese A e provar uma contradição dentro dessa subderivação."
+    },
+    {
+      "front": "Estratégia Reductio Ad Absurdum",
+      "back": "A estratégia Reductio ad Absurdum é uma técnica de dedução que envolve a suposição de uma hipótese negada e a busca de uma contradição a partir dessa suposição. Se a suposição leva a uma conclusão falsa ou contraditória, a hipótese negada é considerada verdadeira. (Ou vice-versa)"
     },
     {
       "front": "Dispensar uma Suposição",
       "back": "Dispensar uma suposição é uma estratégia em dedução natural que envolve encerrar uma suposição temporária que não é mais necessária na derivação. Isso é feito quando a suposição não contribui mais para a prova da conclusão."
-    },
-    {
-      "front": "Pular Linhas de Escopo",
-      "back": "Pular linhas de escopo é uma técnica que envolve pular etapas de dedução dentro de um escopo específico, geralmente uma subderivação, quando a prova da conclusão não depende das etapas puladas. Isso ajuda a simplificar a derivação."
     }
   ],
   "Capítulo 7 - Regras Derivadas e Derivações sem Premissas em Dedução Natural": [
-    {
-      "front": "Conectivo Principal",
-      "back": "O conectivo principal em uma expressão lógica é o operador lógico mais externo que tem a maior influência sobre a estrutura da expressão. Identificar o conectivo principal é fundamental para aplicar corretamente as regras de inferência."
-    },
-    {
-      "front": "Regra Primitiva",
-      "back": "Uma regra primitiva, também conhecida como regra básica, é uma regra de inferência fundamental em dedução natural que não depende de regras derivadas. Elas são as regras mais simples e essenciais do sistema de dedução."
-    },
     {
       "front": "Regra Derivada",
       "back": "Uma regra derivada é uma regra de inferência em dedução natural que é construída com base em regras primitivas e outras regras derivadas. Elas são desenvolvidas para simplificar a derivação de argumentos mais complexos."
     },
     {
-      "front": "Regra do Enfraquecimento",
-      "back": "A regra do enfraquecimento é uma regra derivada que permite inferir uma proposição mais fraca a partir de uma proposição mais forte. Ela é usada para mostrar que, se uma afirmação mais forte é verdadeira, então uma afirmação mais fraca também é verdadeira."
+      "front": "Regra Derivada do Enfraquecimento",
+      "back": "Dado A, podemos criar uma hipótese B, reiterar o A, e concluir que B implica em A, enfraquecendo a premissa A.\nA\n______\nB→A"
     },
+    {
+      "front": "Regra Derivada do Argumento por Casos",
+      "back": "A ∨ B\nA → Z\nB → Z\n______\nZ"
+    },
+    {
+      "front":"Regra Derivada da Eliminação do Bicondicional",
+      "back": "A → B\nA\n_______\nB\n*ou*\nA → B\nB\n_______\nA"
+    },
+    {
+      "front": "Regra Derivada de Eliminação da Disjunção",
+      "back": "¬A ∨ B\nA\n______\nB\n*ou*\nA ∨ ¬B\nB\n______\nA"
+    },
+    
     {
       "front": "Regra da Contraposição",
       "back": "A regra da contraposição é uma regra derivada que permite inferir a negação do antecedente de um condicional a partir da negação de sua consequência. Ela é usada para transformar condicionais em formas equivalentes."
