@@ -262,15 +262,15 @@
     },
     {
       "front": "Eliminação da Conjunção",
-      "back": "A ∧ B\n_____\nA\n*ou*\nA ∧ B\n_____\nB"
+      "back": "A ∧ B\n_____\nA\n<b>ou</b>\nA ∧ B\n_____\nB"
     },
     {
       "front": "Introdução da Disjunção",
-      "back": "A\n_____\nA ∨ B\n*ou*\nB\n_____\nA ∨ B"
+      "back": "A\n_____\nA ∨ B\n<b>ou</b>\nB\n_____\nA ∨ B"
     },
     {
       "front": "Eliminação da Disjunção",
-      "back": "A ∨ B\n¬A\n_____\nB\n*ou*\nA ∨ B\n¬B\n_____\nA"
+      "back": "A ∨ B\n¬A\n_____\nB\n<b>ou</b>\nA ∨ B\n¬B\n_____\nA"
     },
     {
       "front": "Introdução do Bicondicional",
@@ -346,36 +346,35 @@
     },
     {
       "front":"Regra Derivada da Eliminação do Bicondicional",
-      "back": "A → B\nA\n_______\nB\n*ou*\nA → B\nB\n_______\nA"
+      "back": "A → B\nA\n_______\nB\n<b>ou</b>\nA → B\nB\n_______\nA"
     },
     {
       "front": "Regra Derivada de Eliminação da Disjunção",
-      "back": "¬A ∨ B\nA\n______\nB\n*ou*\nA ∨ ¬B\nB\n______\nA"
-    },
-    
-    {
-      "front": "Regra da Contraposição",
-      "back": "A regra da contraposição é uma regra derivada que permite inferir a negação do antecedente de um condicional a partir da negação de sua consequência. Ela é usada para transformar condicionais em formas equivalentes."
+      "back": "¬A ∨ B\nA\n______\nB\n<b>ou</b>\nA ∨ ¬B\nB\n______\nA"
     },
     {
-      "front": "Regras de De Morgan",
-      "back": "As regras de De Morgan são um conjunto de regras derivadas que descrevem a relação entre negações, conjunções e disjunções. Elas fornecem maneiras de lidar com negações de proposições compostas."
+      "front": "Regra Derivada Modus Tolens (Negação do Consequente)",
+      "back": "A → B\n¬B\n______\n¬A\n<b>ou</b>\nA → ¬B\nB\n______\n¬A\n<b>ou</b>\n¬A → B\n¬B\n______\nA"
     },
     {
-      "front": "Regras Condicionais",
-      "back": "Regras condicionais são um conjunto de regras derivadas que tratam de condicionais e bicondicionais em dedução natural. Elas permitem manipular e inferir conclusões com base em afirmações condicionais."
+      "front": "Regra Derivada Reductio Ad Absurdum",
+      "back": "Se uma suposição ¬A leva a uma contradição, posso concluir A"
     },
     {
-      "front": "Regra Reductio Ad Absurdum",
-      "back": "A regra Reductio ad Absurdum é uma regra de inferência que envolve a suposição de uma hipótese negada e a busca de uma contradição a partir dessa suposição. Se a suposição leva a uma conclusão falsa ou contraditória, a hipótese negada é considerada verdadeira."
+      "front": "Regra Derivada de De Morgan",
+      "back": "¬(A ∧ B)\n______\n¬A ∨ ¬B\n<b>ou</b>\n¬(A ∨ B)\n______\n¬A ∧ ¬B"
+    },
+    {
+      "front": "Regra Derivada da Contraposição",
+      "back": "A → B\n______\n¬B → ¬A\n<b>ou</b>\n¬A → B\n______\n¬B → A\n<b>ou</b>\n¬A → B\n______\n¬B → A"
+    },
+    {
+      "front": "Regras Derivada da Eliminação da Implicação",
+      "back": "A → B\n______\n¬A ∨ B\n<b>ou</b>\n¬(A → B)\n______\nA ∧ ¬B"
     },
     {
       "front": "Derivações sem Premissas",
-      "back": "Derivações sem premissas são argumentos que são deduzidos sem a necessidade de premissas iniciais. Em outras palavras, essas derivações são autocontidas e se baseiam apenas nas regras de inferência e nas definições dos conectivos lógicos."
-    },
-    {
-      "front": "Testes para Verdades Lógicas e Contradições",
-      "back": "Os testes para verdades lógicas e contradições são procedimentos usados para determinar se uma proposição é uma verdade lógica, ou seja, se ela é verdadeira em todas as situações, ou se é uma contradição, ou seja, se é falsa em todas as situações. Esses testes ajudam a verificar a validade de argumentos."
+      "back": "São derivações autocontidas. Por exemplo, se eu tenho A, posso concluir A ∨ ¬A. Ou se eu tiver outra premissa B, e quiser incluir um C, posso criar uma subderivação com a hipótese C, reiterar C, e concluir C → C, dessa forma pela regra derivada da eliminação da implicação teremos ¬C ∨ C."
     }
   ],
   "Capítulo 8: Fundamentos de Tableaux para Lógica Sentencial": [
