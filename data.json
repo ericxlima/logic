@@ -211,24 +211,8 @@
       "back": "Um contra-exemplo é um exemplo específico que mostra que um argumento é inválido. É uma instância em que as premissas são verdadeiras, mas a conclusão é falsa, demonstrando a invalidade do argumento."
     },
     {
-      "front": "Correto",
-      "back": "Um argumento é considerado correto quando suas premissas são verdadeiras, e a conclusão segue necessariamente das premissas, tornando-o válido."
-    },
-    {
-      "front": "Condicional",
-      "back": "Um condicional é uma expressão lógica que consiste em duas proposições, geralmente na forma 'se...então...'. O condicional afirma que a segunda proposição é verdadeira quando a primeira proposição é verdadeira."
-    },
-    {
-      "front": "Bicondicional",
-      "back": "Um bicondicional é uma expressão lógica que afirma que duas proposições são verdadeiras ou falsas juntas. Pode ser expresso como 'se e somente se' e é verdadeiro quando ambas as proposições têm o mesmo valor-verdade."
-    },
-    {
-      "front": "Lei do Condicional",
-      "back": "A Lei do Condicional afirma que um condicional é falso apenas quando a proposição antecedente (a primeira) é verdadeira, e a proposição consequente (a segunda) é falsa. Caso contrário, o condicional é verdadeiro."
-    },
-    {
       "front": "Lei da Contraposição",
-      "back": "A Lei da Contraposição estabelece que o contraposto de um condicional é logicamente equivalente ao condicional negado. Em outras palavras, inverter e negar as proposições de um condicional não altera seu valor-verdade."
+      "back": "A Lei da Contraposição estabelece que o contraposto de um condicional é logicamente equivalente ao condicional negado. Em outras palavras, inverter e negar as proposições de um condicional não altera seu valor-verdade. <img src=\"https://wikimedia.org/api/rest_v1/media/math/render/svg/c15ba6d5df532833d6369c0bc800442f65162777\" />"
     },
     {
       "front": "Lei do Bicondicional",
@@ -245,16 +229,8 @@
       "back": "Uma subderivação é uma derivação interna a uma derivação maior. É frequentemente usada para justificar suposições temporárias e aplicar regras de inferência dentro de um escopo específico."
     },
     {
-      "front": "Derivação externa",
-      "back": "A derivação externa é a derivação principal em um argumento lógico, que inclui todas as premissas e a conclusão final. Ela orienta o processo de dedução e serve como estrutura para o raciocínio lógico."
-    },
-    {
       "front": "Linha de escopo",
       "back": "Uma linha de escopo é usada para indicar a área em que uma suposição temporária ou subderivação se aplica. Ela ajuda a identificar o alcance de regras de inferência específicas dentro da derivação."
-    },
-    {
-      "front": "Premissa",
-      "back": "Uma premissa é uma proposição ou afirmação usada como ponto de partida em um argumento lógico. Elas são aceitas como verdadeiras para fins de argumentação e são usadas para derivar conclusões."
     },
     {
       "front": "Suposição",
