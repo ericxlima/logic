@@ -380,27 +380,27 @@
   "Capítulo 8: Fundamentos de Tableaux para Lógica Sentencial": [
     {
       "front": "Tableaux",
-      "back": "Uma técnica de prova usada na lógica sentencial para determinar a validade de argumentos. Ela envolve a construção de uma árvore de decisão para verificar a verdade ou falsidade de proposições lógicas."
+      "back": "Uma técnica de prova usada na lógica sentencial para determinar a validade de argumentos. Ela envolve a construção de uma árvore de decisão para verificar a verdade ou falsidade de proposições lógicas, a partir da conjunção de todas as premissas com a negação da conclusão."
     },
     {
       "front": "Contra-exemplo",
-      "back": "Um exemplo específico que refuta a validade de um argumento. Se um contra-exemplo puder ser encontrado, o argumento não é válido."
+      "back": "Um exemplo específico que refuta a validade de um argumento. Se um contra-exemplo puder ser encontrado, o argumento não é válido. Em uma tabela-verdade, um contra-exemplo é uma linha em que todas as premissas são verdadeiras e a conclusão é falsa."
     },
     {
       "front": "Regra que causa bifurcação (ramificação)",
-      "back": "Uma regra no método de Tableaux que leva a uma ramificação do caminho da prova, geralmente devido a operadores como a conjunção (∧)."
+      "back": "Uma regra no método de Tableaux que leva a uma ramificação do caminho da prova, geralmente devido a operadores como a disjunção (∨)."
     },
     {
       "front": "Regra que não causa bifurcação (ramificação)",
-      "back": "Uma regra no método de Tableaux que não resulta em ramificação do caminho da prova, geralmente usada com operadores como a negação (¬)."
+      "back": "Uma regra no método de Tableaux que não resulta em novos ramos do caminho da prova, geralmente usada com operadores como a negação (¬)."
     },
     {
       "front": "Ramo fechado (ou Caminho)",
-      "back": "Em uma prova de Tableaux, um ramo fechado indica que o conjunto de fórmulas no ramo leva a uma contradição, o que significa que o caminho não pode ser estendido e o argumento é inválido."
+      "back": "Indica que o conjunto de fórmulas do ramo leva a uma contradição, o que significa que o argumento é inválido e portanto não deve-se continuar a prova por este ramo."
     },
     {
       "front": "Ramo aberto (ou Caminho)",
-      "back": "Em uma prova de Tableaux, um ramo aberto é aquele que ainda pode ser estendido com novas fórmulas sem levar a uma contradição, indicando que o argumento ainda não foi refutado."
+      "back": "É aquele que ainda pode ser estendido com novas fórmulas sem levar a uma contradição, indicando que o argumento ainda não foi refutado."
     },
     {
       "front": "Regra ¬¬",
@@ -423,11 +423,11 @@
       "back": "Uma regra de Tableaux usada para lidar com a negação de uma disjunção (¬∨) em uma fórmula, simplificando-a em duas negações separadas, uma para cada parte da disjunção."
     },
     {
-      "front": "Regra =⇒",
+      "front": "Regra ⇒",
       "back": "Uma regra de Tableaux usada para lidar com o condicional (=⇒) em uma fórmula, bifurcando o caminho da prova em dois ramos, um para a antecedente e outro para a consequente do condicional."
     },
     {
-      "front": "Regra ¬ =⇒",
+      "front": "Regra ¬ ⇒",
       "back": "Uma regra de Tableaux usada para lidar com a negação de um condicional (¬ =⇒) em uma fórmula, simplificando-a em uma negação da antecedente ou uma afirmação da consequente."
     },
     {
@@ -441,28 +441,12 @@
   ],
   "Capítulo 9: Aplicações de Tableaux para Lógica Sentencial": [
     {
-      "front": "Conectivo Principal",
-      "back": "O conectivo principal em uma fórmula lógica é o operador lógico que está mais próximo do início da fórmula. Identificar o conectivo principal é importante ao aplicar regras de Tableaux."
-    },
-    {
-      "front": "Verdade Lógica",
-      "back": "Uma fórmula é considerada verdadeira logicamente (ou uma tautologia) se for verdadeira para todas as atribuições possíveis de valores-verdade às suas variáveis."
-    },
-    {
       "front": "Teste com Tableaux para Verdade Lógica",
       "back": "O teste com Tableaux para verdade lógica envolve usar regras de Tableaux para mostrar que uma fórmula é uma tautologia, ou seja, é verdadeira logicamente em todas as situações possíveis."
     },
     {
-      "front": "Contradição",
-      "back": "Uma fórmula é considerada uma contradição se for falsa para todas as atribuições possíveis de valores-verdade às suas variáveis. Ou seja, é sempre falsa."
-    },
-    {
       "front": "Teste com Tableaux para Contradições",
       "back": "O teste com Tableaux para contradições envolve usar regras de Tableaux para mostrar que uma fórmula é uma contradição, ou seja, é sempre falsa, independentemente das situações possíveis."
-    },
-    {
-      "front": "Equivalência Lógica",
-      "back": "Duas fórmulas são logicamente equivalentes se têm o mesmo valor-verdade para todas as atribuições possíveis de valores-verdade às variáveis envolvidas."
     },
     {
       "front": "Teste com Tableaux para Equivalência Lógica",
