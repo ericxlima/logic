@@ -215,25 +215,6 @@
       "back": "Um contra-exemplo é um exemplo específico que mostra que um argumento é inválido. É uma instância em que as premissas são verdadeiras, mas a conclusão é falsa, demonstrando a invalidade do argumento."
     },
     {
-<<<<<<< HEAD
-=======
-      "front": "Corretude",
-      "back": "A corretude é uma propriedade de um argumento dedutivo que afirma que, se as premissas são verdadeiras, então a conclusão também deve ser verdadeira. Um argumento dedutivo é correto se for válido e suas premissas forem verdadeiras."
-    },
-    {
-      "front": "Condicional",
-      "back": "Um condicional é uma expressão lógica que consiste em duas proposições, geralmente na forma 'se...então...'. O condicional afirma que a segunda proposição é verdadeira quando a primeira proposição é verdadeira."
-    },
-    {
-      "front": "Bicondicional",
-      "back": "Um bicondicional é uma expressão lógica que afirma que duas proposições são verdadeiras ou falsas juntas. Pode ser expresso como 'se e somente se' e é verdadeiro quando ambas as proposições têm o mesmo valor-verdade."
-    },
-    {
-      "front": "Lei do Condicional",
-      "back": "A Lei do Condicional afirma que um condicional é falso apenas quando a proposição antecedente (a primeira) é verdadeira, e a proposição consequente (a segunda) é falsa. Caso contrário, o condicional é verdadeiro."
-    },
-    {
->>>>>>> 27f22df26352c42728eacace440d2e17946e1750
       "front": "Lei da Contraposição",
       "back": "A Lei da Contraposição estabelece que o contraposto de um condicional é logicamente equivalente ao condicional negado. Em outras palavras, inverter e negar as proposições de um condicional não altera seu valor-verdade. <img src=\"https://wikimedia.org/api/rest_v1/media/math/render/svg/c15ba6d5df532833d6369c0bc800442f65162777\" />"
     },
